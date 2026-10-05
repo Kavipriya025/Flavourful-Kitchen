@@ -1,0 +1,138 @@
+<html>
+<head>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+font-family: sans-serif;
+font-size:14px;
+background-color:skyblue;
+background-size:cover;
+min-height:100vh;
+display:grid;
+place-items:center;
+}
+.card{
+width:min(100% - 1rem, 22rem);
+border-radius:0.5rem;
+overflow:hidden;
+background: #fff;
+box-shadow: 2px, 6px,31px, 0px hsl(225,100%,94%);
+}
+.image-container{
+width:100%;
+height:11rem;
+}
+.image-container img{
+width:100%;
+height:120%;
+object-fit:cover;
+}
+.content{
+padding: 2.4rem;
+text-align:center;
+display:flex;
+flex-direction:column;
+gap:0.5rem;
+}
+.content h2{
+font-weight:900;
+color:hsl(223,47%,23%);
+}
+.content h3{
+color:hsl(224,23%,55%)'
+}
+.pricing{
+display:flex;
+align-items:center;
+background:hsl(225,100%,98%);
+padding:0.8em;
+border-radius:0.5rem;
+gap:1rem;
+}
+.pricing div{
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+}
+.pricing div h3{
+font-weight:700;
+color:hsl(223,47%,23%);
+}
+.pricing div big{
+font-weight:bold;
+color:black;
+margin-left:20px;
+}
+.pricing a{
+font-weight:500;
+margin-left:auto;
+}
+button{
+outline:none;
+border:none;
+font-size:1rem;
+font-weight:700;
+font-family:inherit;
+cursor:pointer;
+}
+.primary{
+padding: 0.8rem;
+border-radius:0.4rem;
+background:hsl(245,75%,52%);
+color:hsl(225,100%,98%);
+box-shadow:2px 16px 37px -11px rgba(56,41,224,0.75);
+}
+.primary a{
+text-decoration:none;
+color:white;
+}
+.primary:focus{
+outline:2px solid hsl(225,100%,98%);
+background: hsl(245,75%,52%,0.9);
+}
+.primary:hover{
+background: hsl(245,70%,52%,0.9);
+}
+.secondary{
+background:none;
+}
+.secondary a{
+text-decoration:none;
+color:black;
+}
+.content input{
+width:60px;
+border-radius:0.5rem;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<div class="card">
+<div class="image-container">
+<img src="D:\Projects\kitchen\images\Malaysian\MC2.jpeg">
+</div>
+<div class="content">
+<h2>Order Summary</h2>
+<p>Order Your Favourite Food At your Doorstep</p>
+<div class="pricing">
+<div>
+<h3>Food : Chicken Satay</h3>
+<big> Rate: 70/- </big>
+<form>
+Quantity: <input type="number" name="qty">
+</form>
+</div>
+<a href="D:\Projects\kitchen\recipes.html">Change</a>
+</div>
+<button class="primary"><a href="D:\Projects\kitchen\paysuccess.html" target="_blank">Cash on Delivery</a></button>
+<button class="primary"><a href="D:\Projects\kitchen\pay.html" target="_blank">Online Payment</a></button>
+<button class="secondary"><a href="D:\Projects\kitchen\cancel.html" target="_blank">Cancel Order</a></button>
+</div>
+</div>
+</body>
+</html>
